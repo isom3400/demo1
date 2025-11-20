@@ -9,3 +9,8 @@ for i in range(5):
     time.sleep(1)
 placeholder.write("Data loading complete. Displaying business insights.")
 
+
+business_insights = [ ... ]
+for insight in business_insights:
+    placeholder.write(insight)
+    time.sleep(2)
