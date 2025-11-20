@@ -1,8 +1,6 @@
 
 
-
 import streamlit as st
-import time
 
 # -------------------------------
 # 1. Dashboard Title and Objective
@@ -70,26 +68,7 @@ with st.expander("More Information"):
     st.write("Data was collected through surveys, customer feedback forms, and official sales reports.")
 
 # -------------------------------
-# 5. Dynamic Loading Simulation
-# -------------------------------
-placeholder = st.empty()
-for i in range(5):
-    placeholder.write(f"Loading data... {i*20}% complete")
-    time.sleep(1)
-
-placeholder.write("Data loading complete. Displaying business insights.")
-
-business_insights = [
-    "Revenue increased by 15% in Q1 2024.",
-    "Customer satisfaction improved by 10%.",
-    "Market trends show a growing demand for eco-friendly products."
-]
-for insight in business_insights:
-    placeholder.write(insight)
-    time.sleep(2)
-
-# -------------------------------
-# 6. Add Interactivity
+# 5. Add Interactivity
 # -------------------------------
 st.subheader("Interactive Revenue Checker")
 quarters = ["Q1 2024", "Q2 2024", "Q3 2024", "Q4 2024"]
@@ -105,8 +84,8 @@ adjusted_revenue = base_revenue * (1 + growth / 100)
 st.write(f"Adjusted Revenue for {selected_quarter}: ${adjusted_revenue:.2f}M")
 
 # -------------------------------
-# 7. Motivational Button
+# 6. Motivational Button
 # -------------------------------
 if st.button("Show Motivation"):
     st.success("Keep pushing for growth! 🚀")
-    
+
