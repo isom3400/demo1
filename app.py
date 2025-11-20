@@ -1,6 +1,7 @@
 
 
 import streamlit as st
+import time
 
 placeholder = st.empty()
 for i in range(5):
