@@ -13,7 +13,7 @@ st.area_chart(df)
 
 option = st.selectbox(
     "How would you like to be contacted?",
-    ["Email", 
+    ["Email2", 
      "Home phone", 
      "Mobile phone"],
 )
