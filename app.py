@@ -17,7 +17,9 @@ with col2:
 
 
 
-tab1, tab2, tab3 = st.tabs(["Sales Data", "Customer Insights", "Market Trends"])
+tab1, tab2, tab3 = st.tabs(["Sales Data", 
+                            "Customer Insights", 
+                            "Market Trends"])
 with tab1:
     st.write("Content for Sales Data")
     sales_data = {
@@ -35,8 +37,10 @@ with tab2:
         "Very satisfied with the product quality.",
         "Quick delivery and excellent support."
     ]
+    idx = 1
     for feedback in customer_feedback:
-        st.write(f"- {feedback}")
+        st.write(f"{idx} {feedback}")
+        idx += 1
 with tab3:
     st.write("Content for Market Trends")
     market_trends = {
