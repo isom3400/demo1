@@ -44,7 +44,9 @@ with tab3:
         st.write("Revenue: $1.5M")
 
 
-
+with st.expander("More Information"):
+    st.write("Additional details on data collection methods.")
+    st.write("Data was collected through surveys and sales reports.")
 
 
 
