@@ -6,5 +6,11 @@ st.title("Business Dashboard with Streamlit Layouts")
 msg = "## Objective: To demonstrate the usage of columns, tabs, and dynamic containers in a business dashboard."
 st.write(msg)
 
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
+
+with col1:
+    st.header("Header")
+  
+
+
 
