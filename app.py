@@ -18,4 +18,7 @@ option = st.selectbox(
      "Mobile phone"],
 )
 
+
 st.write("You selected:", option)
+
+
