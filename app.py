@@ -1,53 +1,26 @@
-
-
 import streamlit as st
-import pandas as pd
+from streamlit_option_menu import option_menu
 
-# Sample Data
-data = {
-    'Product': ['A', 'B', 'C', 'D', 'E'],
-    'Sales': [1200, 850, 950, 1100, 1300],
-    'Customers': [300, 400, 350, 450, 500]
-}
-df = pd.DataFrame(data)
+st.title('Hello, Students!')
+st.write('This is your Python Programming course.')
 
-# Display Sample Data
-st.write("### Sales Data")
-st.write(df)
+with st.sidebar:
+    selected=option_menu(
+        menu_title = "Menu",
+        options = ["Home", "About", "Contact"],
+        icons = ["1-circle-fill",
+                 "2-circle-fill",
+                 "3-circle-fill"],
+        menu_icon= "emoji-smile-fill",
+        default_index=0,
+    )
 
-# Slider for Sales Range
-sales_range = st.slider("Select Sales Range", min_value=0, max_value=1500, value=(500, 1000))
+if selected == "Home":
+    st.title(f"Welcome to the {selected} page.")
 
-# Filter Data Based on Sales Range
-filtered_df = df[(df['Sales'] >= sales_range[0]) & (df['Sales'] <= sales_range[1])]
-st.write("### Filtered Data")
-st.write(filtered_df)
+if selected == "About":
+    st.title(f"Welcome to the {selected} page.")
 
-# Selectbox for Product Choice
-product_choice = st.selectbox("Select Product", filtered_df['Product'].unique())
-
-# Text Input for User Name
-user_name = st.text_input("Enter your name")
-
-# Text Area for Feedback
-feedback = st.text_area("Enter your feedback")
-
-# Checkbox for Agreement
-agree = st.checkbox("I agree to the terms and conditions")
-
-# File Uploader for Uploading Files
-uploaded_file = st.file_uploader("Upload a relevant file")
-
-# Button to Submit Feedback
-if st.button("Submit Feedback"):
-    if agree:
-        st.write("### Submitted Feedback")
-        st.write(f"**Name:** {user_name}")
-        st.write(f"**Product:** {product_choice}")
-        st.write(f"**Sales Range:** {sales_range}")
-        st.write(f"**Feedback:** {feedback}")
-        if uploaded_file is not None:
-            st.write("File uploaded successfully!")
-    else:
-        st.write("You must agree to the terms and conditions to submit feedback.")
-            
+if selected == "Contact":
+    st.title(f"Welcome to the {selected} page.")
+    
