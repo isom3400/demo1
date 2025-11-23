@@ -18,7 +18,7 @@ df = pd.DataFrame({
     'Sales': sales,
     'Customers': customers
 })
-
+print(df)
 # Step 5: Visualize Sales Data
 
 # Display DataFrame using st.dataframe
