@@ -18,7 +18,14 @@ df = pd.DataFrame({
     'Sales': sales,
     'Customers': customers
 })
-print(df)
+print("=====================================TEST TEST TEST=TEST TEST TEST=TEST TEST TEST=TEST TEST TEST")
+print("=====================================TEST TEST TEST=TEST TEST TEST=TEST TEST TEST=TEST TEST TEST")
+print("=====================================TEST TEST TEST=TEST TEST TEST=TEST TEST TEST=TEST TEST TEST")
+print("=====================================TEST TEST TEST=TEST TEST TEST=TEST TEST TEST=TEST TEST TEST")
+print("=====================================TEST TEST TEST=TEST TEST TEST=TEST TEST TEST=TEST TEST TEST")
+print("=====================================TEST TEST TEST=TEST TEST TEST=TEST TEST TEST=TEST TEST TEST")
+print("=====================================TEST TEST TEST=TEST TEST TEST=TEST TEST TEST=TEST TEST TEST")
+print("=====================================TEST TEST TEST=TEST TEST TEST=TEST TEST TEST=TEST TEST TEST")
 # Step 5: Visualize Sales Data
 
 # Display DataFrame using st.dataframe
