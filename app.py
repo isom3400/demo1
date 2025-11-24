@@ -14,4 +14,5 @@ st.data_editor(df)              # Editable table
 st.table(df)                    # Static table
 
 # Customize columns directly in the dataframe display
-st.dataframe(df.style.format({'Sales': '${:,.0f}', 'Customers': '{:,.0f}'}))
+st.dataframe(df.style.format({'Sales': '$$${:,.0f}', 
+                              'Customers': 'Number = {:,.0f}'}))
